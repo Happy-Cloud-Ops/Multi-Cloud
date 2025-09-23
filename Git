@@ -1,0 +1,113 @@
+GIT
+
+Why Source Control 
+
+Backup / Archive
+Versioning / History
+Undo Changes
+Comparing
+Collaboration / Teamwork
+Blame / Learning Moment
+Isolation of Changes
+Experimentation
+Context Switching
+Code Review
+
+Software Developers / Engineers / programmers
+
+Source Code ( Java, C++, Objective-C, Ruby, etc)
+Modules (UML, ERB)
+SQL, configuration, text files
+
+Freelancers
+
+Web Designers
+
+Graphic Artists
+
+Share code / Open Source
+
+Source Control Options
+
+
+2 Main Types
+
+Centralized
+Decentralized / Distributed
+
+Centralized
+
+Free : Subversion, CVS
+Comercial: ClearCase, Perforce, Team Foundation Server (TFS)
+Requires connection to central server for most operations
+
+Distributed: 
+
+Mecurial (Hg)
+Git
+Most operations are local
+central server not required
+
+Centralized Version Control Systems (CVCS) use a single central repository where all version history is stored, while Distributed Version Control Systems (DVCS) store the full history of the project on each developer's local machine. CVCS relies on a central server for operations, while DVCS allows for offline work and more flexible branching/merging
+
+Key Differences: 
+Repository Location:
+CVCS has one central repository, while DVCS stores a copy of the entire repository on each developer's machine. 
+Network Dependency:
+CVCS requires a network connection for most operations, while DVCS allows for offline work and synchronizes changes later. 
+Branching and Merging:
+CVCS can have limited branching and merging capabilities, while DVCS offers more flexibility in branching and merging due to local copies. 
+Speed and Performance:
+CVCS can be slower due to network dependency, while DVCS offers faster performance as most operations are local. 
+Data Backup and Recovery:
+CVCS relies on the central server for backups, which can be a single point of failure. DVCS provides data backup and recovery since each developer has a complete copy. 
+Collaboration:
+CVCS requires more centralized control and coordination, while DVCS facilitates parallel development and more independent work. 
+Scalability:
+CVCS scalability can be limited by the central server, while DVCS scales more easily due to distributed workload. 
+
+
+What is Git ?
+
+
+Distributed Source Control System
+-Not required to be decentralized
+
+Massively sales
+Open Source
+Developed for Linux project requirements
+Most operations are local
+Very Fast
+Active community
+Most popular DVCS, VCS
+
+
+
+Key Concepts
+
+Repository contains files, history, config managed by Git
+3 Stages of Git
+
+- Working directory
+- Staging area - pre-commit holding area
+- Commit - Git Repository (history)
+
+Remote repository (GitHub)
+
+Basic Git Workflow Life Cycle
+
+Master Branch
+
+Basic Git Workflow Life Cycle
+
+git Installation
+
+- Windows
+ 
+  - Git for Wndows (git-scm.com) || https://git-scm.com/
+  - 
+Mac OS X
+
+   - Yosemite or later, easy path: "git version"
+   - Git for Mac (git-scm.com)
+
