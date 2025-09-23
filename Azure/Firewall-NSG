@@ -1,0 +1,40 @@
+##############################################VNET-Subnet Creation#################################################
+
+echo "Creating Resource groups & Vnets"
+az group create -l westus -n AzureRG1
+
+az network vnet create -g AzureRG1 -n ASG-RG-vNET1 --address-prefix 10.1.0.0/16 \
+--subnet-name AzureRG1-subnet1 --subnet-prefix 10.1.1.0/24 -l westus
+
+az network vnet subnet create -g AzureRG1 --vnet-name ASG-RG-vNET1 -n AzureRG1-subnet-2 --address-prefixes 10.1.2.0/24
+
+az network vnet subnet create -g AzureRG1 --vnet-name ASG-RG-vNET1 -n AzureRG1-subnet-3 --address-prefixes 10.1.3.0/24
+
+
+###########################################################################################################################
+
+Run the Script --> RG --> VNET --> 3 Subnets --> 3 VMs  (WebserverVM, AppserverVM, DBserverVM)
+
+Delete all the associated NSG's to the VM --> NIC --> Dissociate
+
+Create the ASG's for each VM -> WEB Server, APP Server, DB Server --> WEBASG, APPASG, DBASG
+
+Now go to the VM --> Asociate the respective ASG's --> to the respective VMS's
+
+Now create the NSG's --> One NSG is enough for 100's of Server  || 
+
+NSG --> Any to WEBASG || WEBASG to APPASG || APPASG to DBASG --> 3 NSG Rules has been created
+
+Now NSG's are Ready.. Now we need to atatch to the VM's
+
+Go to NSG --> Network Interfaces --> Assciate the NIC's of all the WEB, APP, & DB Sercer's
+
+
+Ports - Allowsshandweb --> 8080,22 || Middle ware
+        AllowApptoDB   --> 3000, 22 (22 also need to allow to login from the App Server)  || DB
+        Allowsshtoweb  --> 80,22 || WEB
+
+From the WEB SERVER after login --> Type the command --> ssh <AppServer_Private IP>
+
+ 
+############################################################################################
