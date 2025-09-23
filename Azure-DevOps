@@ -1,1 +1,147 @@
 
+IaaS  PaaS   SaaS
+
+IaaS : Infrastructure as a Service || The Cloud provides the underlying platform
+
+Compute
+Networking
+Storage
+
+The Client handles, and is responsible for all the rest
+
+Most common examples : Virtual Machines
+
+The Cloud provides the host machine, networking and disks
+
+The Client creates the virtual (guest) machine, installs software on it, patches it, maintains it etc.,
+
+Builder s Customer
+
+Builder : Kitchen, Hall, Bathroom 
+
+Builder : Will provide only he border walls in the Flat
+
+PaaS :
+
+Platform as a Service
+
+The Cloud provides platform for running apps
+
+Including Compute, networking, storage, runtime environment, scaling, redundancy, security, updates, pathcing, maintenance etc.
+
+The client just needs to bring the CODE TO RUN.
+
+Most common examples : WEB APPS
+
+The Cloud provides the runtime for running web aps
+The Client uploads the code, and it just runs
+The Clinet has no access to the underlying virtual machines
+
+
+SaaS : Software as a Service
+
+A S/w running completely in the cloud
+The user doesn't need to install anything on-premises or on his machine
+The provider of the software takes care of updates, patches, redundancy, scalability etc.
+
+Commn Examples : Office 365, Salesforce
+
+Look in th Google for any example comartition pic for Iaas Vs PaaS Vs SaaS
+
+Additional Servies:
+
+FaaS : Functions as a Service
+DBaaS : Database as a Service
+DaaS : Desktop as a Service
+IOTaaS : IOT as a Service
+AlaaS : AI as a Service
+
+
+
+Types of Clouds :
+
+Public
+Private 
+Hybrid
+
+Public Cloud:
+
+The cloud is set up in the public network
+Managed by large companies
+Accessible through the Internet
+Available to call clinets and users
+Clients have no access to underlying infrastructure
+
+Examples : AWS, AZURE, Google, IBM Cloud
+
+
+Private cloud : 
+
+A Cloud set up in an organizations Premises.
+Managed by the organization's IT team
+Acessible only in the organization's network
+Available to users from the organizations
+Uses private cloud infrastructure and engines
+Contains a subset of the public cloud's capabiulities
+
+Examples : vmware CLOUD RED HAT OPENSHIFT Contianer platform, Azure Stack
+
+
+Hybrid Cloud : 
+
+A Cloud set up in an organizations Premises...
+But also connected to the public cloud
+Workload can be seperated the two clouds
+i.e., Sensitive data in organizations premises, public data in the public cloud
+Usually managed by the public cloud, but not always
+
+Examples : Azure Arc, AWS Outposts
+
+
+Cloud Providers
+
+
+Companies which build datacentres and provide public cloud services
+IaaS, PaaS, SaaS
+Other Services
+
+Cloud Providers Growth
+
+Q3 2024
+
+AWS - 12%
+Azure - 29%
+Google - 24%
+
+Azure is the fastest growing public Cloud for years
+
+
+
+
+Azure Intro : 
+
+Microsoft Public cloud
+Announced in Oct 2008
+Released in Feb 2010
+The 2nd Largest Public cloud
+Closing the gap
+
+
+First focussed on PaaS Services
+To counter AWS's IaaS focus
+Later added IaaS
+Currently offers the largest variety of cloud services
+
+Major clients : SAMSUNG. BOEING, ebay, BMW
+
+
+
+Regions:
+
+Microsoft built a lot of datacenters for Azure
+Each DS location is called a Region
+There are 60 Azure Regions (more than any other cloud)
+Almost every new resource in the clous should be allocated to a region
+
+
+
