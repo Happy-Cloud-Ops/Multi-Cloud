@@ -1,0 +1,74 @@
+############################  Git Commands  #####################################################
+
+git init . || Creates the .git file in the local dierectory
+
+git add . / git add <filename> / git add --all || Adding the files from the Working Directory to the Staging
+
+git commit -m "Commit Message" || Moving from Untracked files to the Staging
+
+git push Origin || Pushing the Code to the remote repository
+
+git log || Listing out all the Commits
+
+git diff <Commitid> <Commitid> / git diff HEAD HEAD~1 || Validating the changes between 2 different Commits
+
+git show <commitid> / git show HEAD || Populate the current changes in that particular Commit
+
+git annotate || Shows line by line chnages/modified by whom
+
+git branch || Display the current branch
+
+git branch <Branch Name> || Creates a New branch
+
+git switch <Branch Name> || Switches to the required branch
+
+git branch -d <Branch Name> || Delete the branch
+
+git branch -D <Branch Name> || Delete the branch forcefully
+
+
+#############################################################################################
+
+######### Reverting Changes in the Working Directory ###############
+
+git restore <file name> || To revert the Changes in the working directory
+
+git checkout -- filename || Same as above - To revert the Changes in the working director
+
+######### Reverting Changes from the Staging to Working Directory ###############
+
+git restore --staged file5 || Revert the Changes from Staging to the Working Directory
+
+git restore <file name> || To revert the Changes in the working directory
+
+######### Reverting Changes from the Local Repository to Working Directory ###############
+
+git reset HEAD~ || To revert the Changes from Local Repo to the Working Directory
+
+git restore <file name> || To revert the Changes in the working directory
+
+#############################################################################################
+
+####################### gitignore ##################################################
+
+Create a file with the name as .gitignore
+
+Create some txt files using touch Command --> test1.txt, test2.txt
+
+vi .gitignore --> *.txt --> Save the File & Exit
+
+Now git status --> We can see the untracked file as .txt files
+
+Not push this .gitignore file to the remote Repos as we can see all the .txt files inside the gitignore file
+
+Update the file names whichever wants to be included in the gitignore or
+
+Include a WILD Card Entry for the same format files whichever needs to be ignored.
+
+#####################################################################################
+
+
+
+
+
+
